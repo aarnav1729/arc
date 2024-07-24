@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="Astro v3.2.4" />
+    <title>ANZ Landscaping</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="module">
+      const r = document.getElementById("acordeon");
+      if (!r) throw new ReferenceError();
+      r.addEventListener("click", (s) => {
+        const e = s.target,
+          n = { ...e.dataset },
+          t = e.nextElementSibling,
+          a = e.querySelector("img");
+        if (!a || !t) throw new ReferenceError();
+        switch (n.status) {
+          case "disabled":
+            (t.style.gridTemplateRows = "1fr"),
+              (e.dataset.status = "enabled"),
+              (a.style.rotate = "90deg");
+            break;
+          case "enabled":
+            (t.style.gridTemplateRows = "0fr"),
+              (e.dataset.status = "disabled"),
+              (a.style.rotate = "0deg");
+            break;
+        }
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content="Astro v3.2.4" />
+        <title>ANZ Landscaping</title>
+      </head>
+      <body class="text-neutral-50 bg-zinc-950 uppercase">
+        <div class="max-w-[1000px] mx-auto px-4">
+          <header class="mb-16">
+            <nav class="py-4">
+              <ul
+                class="flex justify-between uppercase font-medium text-sm text-transparent md:text-base"
+              >
+                <li>
+                  <a class="silver hover:brightness-150" href="#">Hire Us</a>
+                </li>
+                <li>
+                  <a
+                    class="silver text-lg hover:brightness-150 md:text-xl"
+                    href="#"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a class="silver hover:brightness-150" href="#">Menu</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="mb-section">
+            <h1
+              class="silver mb-16 text-[4rem] font-extrabold uppercase text-center leading-[4rem] md:text-[8rem] md:leading-[7rem] md:text-start"
+            >
+              ANZ <br />
+              Landscaping
+            </h1>
+            <figure>
+              <div class="relative mb-4">
+                <img
+                  class="w-full object-cover rounded-br-[3rem] md:h-[30rem] md:rounded-br-[10rem]"
+                  src="/azd.png"
+                /><img
+                  class="border-zinc-950 absolute w-[5rem] right-[20%] bottom-0 translate-y-1/2 z-20 border-[8px] rounded-full md:w-[8rem]"
+                  src="/Luxury Architect Pin.png"
+                />
+              </div>
+              <figcaption
+                class="silver uppercase font-medium text-xs md:text-base"
+              >
+                © ANZ Landscaping
+              </figcaption>
+            </figure>
+          </section>
+          <section class="mb-section grid gap-4 md:grid-cols-2 md:gap-12">
+            <h2 class="text-title">we are your partner in building your personal outdoor paradise</h2>
+            <p class="neutral-100 opacity-50 text-sm md:text-base">
+              our team of experts help bring your vision to reality
+              and overcome any challenges, without doubt
+            </p>
+          </section>
+          <section class="mb-section">
+            <h2 class="text-title mb-4">featured project</h2>
+            <div class="grid gap-8 mb-8 md:grid-cols-2">
+              <p class="text-sm opacity-50">
+                our solutions and unique approach to each project often leave our clients in awe
+              </p>
+              <aside class="flex flex-wrap gap-4 text-sm md:justify-items-end">
+                <button
+                  class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                  type="button"
+                >
+                  commercial</button
+                ><button
+                  class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                  type="button"
+                >
+                  residential</button
+                ><button
+                  class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                  type="button"
+                >
+                  industrial
+                </button>
+              </aside>
+            </div>
+            <div
+              class="h-[40rem] grid gap-4 md:h-[30rem] md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 [&>*]:overflow-hidden"
+            >
+              <div class="w-full h-full lg:col-span-2">
+                <a
+                  class="block relative w-full h-full cursor-pointer group"
+                  href="#"
+                  ><img
+                    class="w-full h-full object-cover"
+                    src="/g1.jpg"
+                    alt="some building" />
+                  <div
+                    class="bg-slate-500 bg-opacity-20 absolute inset-0 flex justify-center items-center flex-col gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                  >
+                    <h3
+                      class="text-2xl font-medium text-center md:text-3xl lg:text-4xl"
+                    >
+                      project 1
+                    </h3>
+                    <div class="flex items-center gap-1 text-base md:text-lg">
+                      <img
+                        class="w-8 opacity-0"
+                        src="/arrow.svg"
+                        alt="arrow"
+                      /><span>view more</span
+                      ><img class="w-8" src="/arrow.svg" alt="arrow" />
+                    </div></div
+                ></a>
+              </div>
+              <div class="w-full h-full lg:row-span-2">
+                <a
+                  class="block relative w-full h-full cursor-pointer group"
+                  href="#"
+                  ><img
+                    class="w-full h-full object-cover"
+                    src="/g1.jpg"
+                    alt="some building" />
+                  <div
+                    class="bg-slate-500 bg-opacity-20 absolute inset-0 flex justify-center items-center flex-col gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                  >
+                    <h3
+                      class="text-2xl font-medium text-center md:text-3xl lg:text-4xl"
+                    >
+                      project 2
+                    </h3>
+                    <div class="flex items-center gap-1 text-base md:text-lg">
+                      <img
+                        class="w-8 opacity-0"
+                        src="/arrow.svg"
+                        alt="arrow"
+                      /><span>view more</span
+                      ><img class="w-8" src="/arrow.svg" alt="arrow" />
+                    </div></div
+                ></a>
+              </div>
+              <div class="w-full h-full lg:row-span-2">
+                <a
+                  class="block relative w-full h-full cursor-pointer group"
+                  href="#"
+                  ><img
+                    class="w-full h-full object-cover"
+                    src="/g1.jpg"
+                    alt="some building" />
+                  <div
+                    class="bg-slate-500 bg-opacity-20 absolute inset-0 flex justify-center items-center flex-col gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                  >
+                    <h3
+                      class="text-2xl font-medium text-center md:text-3xl lg:text-4xl"
+                    >
+                      project 3
+                    </h3>
+                    <div class="flex items-center gap-1 text-base md:text-lg">
+                      <img
+                        class="w-8 opacity-0"
+                        src="/arrow.svg"
+                        alt="arrow"
+                      /><span>view more</span
+                      ><img class="w-8" src="/arrow.svg" alt="arrow" />
+                    </div></div
+                ></a>
+              </div>
+              <div class="w-full h-full lg:col-span-2">
+                <a
+                  class="block relative w-full h-full cursor-pointer group"
+                  href="#"
+                  ><img
+                    class="w-full h-full object-cover"
+                    src="/g1.jpg"
+                    alt="some building" />
+                  <div
+                    class="bg-slate-500 bg-opacity-20 absolute inset-0 flex justify-center items-center flex-col gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                  >
+                    <h3
+                      class="text-2xl font-medium text-center md:text-3xl lg:text-4xl"
+                    >
+                      project 4
+                    </h3>
+                    <div class="flex items-center gap-1 text-base md:text-lg">
+                      <img
+                        class="w-8 opacity-0"
+                        src="/arrow.svg"
+                        alt="arrow"
+                      /><span>view more</span
+                      ><img class="w-8" src="/arrow.svg" alt="arrow" />
+                    </div></div
+                ></a>
+              </div>
+            </div>
+          </section>
+          <section class="mb-section">
+            <header class="mb-8 grid gap-4 md:grid-cols-2 md:gap-8">
+              <h2 class="text-title">areas of expertise</h2>
+              <p class="text-sm opacity-50 md:text-base">
+                with more than 20+ years of experiencie, we always come up with an
+                innovative solution tailored to your specific needs
+              </p>
+            </header>
+            <section class="grid gap-8 md:grid-cols-2">
+              <div>
+                <ul id="acordeon" class="flex items-center flex-col gap-6">
+                  <li class="border-neutral-600 border-b-[1px]">
+                    <header
+                      class="flex justify-between cursor-pointer [&>*]:pointer-events-none opacity-80 hover:opacity-100"
+                      data-status="disabled"
+                    >
+                      <h3 class="text-lg font-extralight md:text-xl">
+                        landscaping
+                      </h3>
+                      <img
+                        class="w-8 transition-[rotate]"
+                        src="/arrow.svg"
+                        alt="arrow"
+                        style="rotate: 0deg"
+                      />
+                    </header>
+                    <div
+                      class="grid transition-all"
+                      style="grid-template-rows: 0fr"
+                    >
+                      <div class="h-full overflow-hidden">
+                        <p class="mb-4 pt-2 text-sm opacity-50 md:text-base">
+                          provide a full engaging experience in building
+                          information modelling. we have embraced this
+                          technology with the aim of streamlining our production
+                          process
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="border-neutral-600 border-b-[1px]">
+                    <header
+                      class="flex justify-between cursor-pointer [&>*]:pointer-events-none opacity-80 hover:opacity-100"
+                      data-status="enabled"
+                    >
+                      <h3 class="text-lg font-extralight md:text-xl">
+                        maintenance
+                      </h3>
+                      <img
+                        class="w-8 transition-[rotate]"
+                        src="/arrow.svg"
+                        alt="arrow"
+                        style="rotate: 90deg"
+                      />
+                    </header>
+                    <div
+                      class="grid transition-all"
+                      style="grid-template-rows: 1fr"
+                    >
+                      <div class="h-full overflow-hidden">
+                        <p class="mb-4 pt-2 text-sm opacity-50 md:text-base">
+                          provide a full engaging experience in building
+                          information modelling. we have embraced this
+                          technology with the aim of streamlining our production
+                          process
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="border-neutral-600 border-b-[1px]">
+                    <header
+                      class="flex justify-between cursor-pointer [&>*]:pointer-events-none opacity-80 hover:opacity-100"
+                      data-status="disabled"
+                    >
+                      <h3 class="text-lg font-extralight md:text-xl">
+                        gardening
+                      </h3>
+                      <img
+                        class="w-8 transition-[rotate]"
+                        src="/arrow.svg"
+                        alt="arrow"
+                        style="rotate: 0deg"
+                      />
+                    </header>
+                    <div
+                      class="grid transition-all"
+                      style="grid-template-rows: 0fr"
+                    >
+                      <div class="h-full overflow-hidden">
+                        <p class="mb-4 pt-2 text-sm opacity-50 md:text-base">
+                          provide a full engaging experience in building
+                          information modelling. we have embraced this
+                          technology with the aim of streamlining our production
+                          process
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="border-neutral-600 border-b-[1px]">
+                    <header
+                      class="flex justify-between cursor-pointer [&>*]:pointer-events-none opacity-80 hover:opacity-100"
+                      data-status="disabled"
+                    >
+                      <h3 class="text-lg font-extralight md:text-xl">
+                        commercial
+                      </h3>
+                      <img
+                        class="w-8 transition-[rotate]"
+                        src="/arrow.svg"
+                        alt="arrow"
+                        style="rotate: 0deg"
+                      />
+                    </header>
+                    <div
+                      class="grid transition-all"
+                      style="grid-template-rows: 0fr"
+                    >
+                      <div class="h-full overflow-hidden">
+                        <p class="mb-4 pt-2 text-sm opacity-50 md:text-base">
+                          provide a full engaging experience in building
+                          information modelling. we have embraced this
+                          technology with the aim of streamlining our production
+                          process
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="border-neutral-600 border-b-[1px]">
+                    <header
+                      class="flex justify-between cursor-pointer [&>*]:pointer-events-none opacity-80 hover:opacity-100"
+                      data-status="disabled"
+                    >
+                      <h3 class="text-lg font-extralight md:text-xl">
+                        residential
+                      </h3>
+                      <img
+                        class="w-8 transition-[rotate]"
+                        src="/arrow.svg"
+                        alt="arrow"
+                        style="rotate: 0deg"
+                      />
+                    </header>
+                    <div
+                      class="grid transition-all"
+                      style="grid-template-rows: 0fr"
+                    >
+                      <div class="h-full overflow-hidden">
+                        <p class="mb-4 pt-2 text-sm opacity-50 md:text-base">
+                          provide a full engaging experience in building
+                          information modelling. we have embraced this
+                          technology with the aim of streamlining our production
+                          process
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-full aspect-square rounded-br-[10rem] overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="/g1.jpg"
+                  alt="some building"
+                />
+              </div>
+            </section>
+          </section>
+          <section class="mb-section">
+            <header class="mb-8 grid gap-4 md:grid-cols-2 md:gap-8">
+              <h2 class="text-title">meet our people</h2>
+              <p class="text-sm opacity-50 md:text-base">
+                meet the experts on our team who are ready to be
+                your partners
+              </p>
+            </header>
+            <section
+              class="h-[35rem] grid gap-4 md:h-[30rem] md:grid-cols-2 lg:grid-cols-4"
+            >
+              <a
+                class="block relative w-full h-full cursor-pointer group overflow-hidden"
+                href="#"
+                ><img
+                  class="w-full h-full object-cover grayscale"
+                  src="/d2.jpeg"
+                  alt="some people"
+                />
+                <div
+                  class="bg-slate-500 bg-opacity-20 absolute bottom-0 w-full p-2 gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                >
+                  <h3 class="text-lg font-medium md:text-xl lg:text-3xl">
+                    aarnav singh
+                  </h3>
+                  <span class="text-sm lg:text-base">expert</span>
+                </div></a
+              ><a
+                class="block relative w-full h-full cursor-pointer group overflow-hidden"
+                href="#"
+                ><img
+                  class="w-full h-full object-cover grayscale"
+                  src="/d2.jpeg"
+                  alt="some people"
+                />
+                <div
+                  class="bg-slate-500 bg-opacity-20 absolute bottom-0 w-full p-2 gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                >
+                  <h3 class="text-lg font-medium md:text-xl lg:text-3xl">
+                    aarnav singh
+                  </h3>
+                  <span class="text-sm lg:text-base">expert</span>
+                </div></a
+              ><a
+                class="block relative w-full h-full cursor-pointer group overflow-hidden"
+                href="#"
+                ><img
+                  class="w-full h-full object-cover grayscale"
+                  src="/d2.jpeg"
+                  alt="some people"
+                />
+                <div
+                  class="bg-slate-500 bg-opacity-20 absolute bottom-0 w-full p-2 gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                >
+                  <h3 class="text-lg font-medium md:text-xl lg:text-3xl">
+                    aarnav singh
+                  </h3>
+                  <span class="text-sm lg:text-base">expert</span>
+                </div></a
+              ><a
+                class="block relative w-full h-full cursor-pointer group overflow-hidden"
+                href="#"
+                ><img
+                  class="w-full h-full object-cover grayscale"
+                  src="/d2.jpeg"
+                  alt="some people"
+                />
+                <div
+                  class="bg-slate-500 bg-opacity-20 absolute bottom-0 w-full p-2 gap-1 backdrop-blur-md translate-y-full group-hover:translate-y-0 transition-transform md:gap-2"
+                >
+                  <h3 class="text-lg font-medium md:text-xl lg:text-3xl">
+                    aarnav singh
+                  </h3>
+                  <span class="text-sm lg:text-base">expert</span>
+                </div></a
+              >
+            </section>
+          </section>
+          <section class="mb-20">
+            <h2 class="text-title mb-8">keep in touch with us</h2>
+            <form class="grid gap-4 md:grid-cols-2 md:gap-8">
+              <label class="flex flex-col gap-2" for="1"
+                ><span class="opacity-80">name</span
+                ><input
+                  class="border-neutral-600 bg-transparent pb-2 outline-none border-b-[1px] placeholder:uppercase placeholder:opacity-50 focus:text-opacity-100 focus:border-neutral-300"
+                  id="1"
+                  type="text"
+                  type="text"
+                  placeholder="input your name" /></label
+              ><label class="flex flex-col gap-2" for="2"
+                ><span class="opacity-80">company</span
+                ><input
+                  class="border-neutral-600 bg-transparent pb-2 outline-none border-b-[1px] placeholder:uppercase placeholder:opacity-50 focus:text-opacity-100 focus:border-neutral-300"
+                  id="2"
+                  type="text"
+                  type="text"
+                  placeholder="input your company" /></label
+              ><label class="flex flex-col gap-2" for="2"
+                ><span class="opacity-80">email</span
+                ><input
+                  class="border-neutral-600 bg-transparent pb-2 outline-none border-b-[1px] placeholder:uppercase placeholder:opacity-50 focus:text-opacity-100 focus:border-neutral-300"
+                  id="2"
+                  type="email"
+                  type="text"
+                  placeholder="input your email"
+              /></label>
+              <div>
+                <span class="block mb-2 opacity-80">services</span>
+                <div class="flex items-end gap-4 flex-wrap text-sm">
+                  <button
+                    class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                    type="button"
+                  >
+                    Landscaping</button
+                  ><button
+                    class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                    type="button"
+                  >
+                    Maintenance</button
+                  ><button
+                    class="border-neutral-400 text-neutral-400 py-2 px-4 border-2 rounded-full uppercase hover:bg-neutral-400 hover:text-black transition-colors"
+                    type="button"
+                  >
+                    Gardening
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+          <footer>
+            <nav class="py-4">
+              <ul
+                class="flex justify-between uppercase font-medium text-sm text-transparent md:text-base"
+              >
+                <li>
+                  <a class="silver hover:brightness-150" href="#"
+                    >terms & agreements</a
+                  >
+                </li>
+                <li>
+                  <a class="silver hover:brightness-150" href="#"
+                    >©all rights reserved</a
+                  >
+                </li>
+                <li>
+                  <a class="silver hover:brightness-150" href="#"
+                    >privacy policy</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
